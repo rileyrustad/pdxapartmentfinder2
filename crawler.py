@@ -45,8 +45,8 @@ def merge_two_dicts(x, y):
 
 unexplored_id_numbers = []
 newdict = {}
-# page_numbers = ['']+["?s='"+str(x+1)+'00' for x in range(24)]
-page_numbers = ['']
+page_numbers = ['']+["?s='"+str(x+1)+'00' for x in range(24)]
+# page_numbers = ['']
 
 
 print("Searching for new listings...")
