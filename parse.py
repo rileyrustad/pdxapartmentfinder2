@@ -64,7 +64,11 @@ def bedbathfeet(bedbathfeet):
         if 'BR' in item:
             bed = int(item[0])
         elif 'Ba' in item:
-            bath = int(item[0])
+            bath = int(item[:-2])
+        elif 'shared' in item:
+            bath = .5
+        elif 'split' in item:
+            bath = .5
         else:
             feet = int(item)
     return bed, bath, feet
