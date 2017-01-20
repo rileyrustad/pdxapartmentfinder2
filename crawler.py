@@ -69,7 +69,7 @@ while len(unexplored_id_numbers)>0:
     id_number = unexplored_id_numbers.pop(-1)
     it = new_numbers - len(unexplored_id_numbers)
     status.printProgress(it, new_numbers, prefix = 'Progress:',
-                         suffix = 'Complete', decimals = 2, barLength = 50)
+                         suffix = 'Complete {}'.format(id_number), decimals = 2, barLength = 50)
     # Get info for listing
     newdict = scrape.info(id_number,newdict)
     # Sleep at random intervals so that craigslist doesn't disconnect
